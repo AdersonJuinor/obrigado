@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: black;
+    height: 10vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+section.obrigado{
+    padding: 20px 4%;
+}
+
+section.obrigado .flex{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.obrigado .txt h1{
+    color: #fff;
+    font-size: 34px;
+    line-height: 20px;
+}
+
+.obrigado .txt h1 span{
+    color: #00ff00;
+}
+
+.obrigado  p{
+    color: #fff;
+    font-size: 20px;
+    margin: 40px 0;
+}
+
+.img{
+    margin: 0 0;
+    font-size: 30px;
+    position: relative;
+    animation: flutua 2s  ease-in-out infinite alternate;
+}
+
+
+@keyframes flutua{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+.obrigado .voltar button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #00ff08;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #00ff08;
+    transform: scale(1.05);
+}
+
+footer{
+    padding: 20px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1a;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer{
+    padding: 10px 0;
+}
+
+.borda{
+    border-top: 2px solid #00ff00;
+}
+
+footer .line-footer p i{
+    color: #00ff00;
+    font-size: 25px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+footer .logo-footer a{
+    text-decoration: none;
+    color: #00ff00;
+}
+
+.btn-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: #00ff00;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
+
+@media screen and (max-width: 1090px){
+
+    /* CLASSES GERAIS */
+    .flex{
+        flex-direction: column;
+    }
+
+    .topo-do-site .flex{
+        flex-direction: column-reverse;
+    }
+
+    .sobre .flex{
+        flex-direction: column-reverse;
+    }
+
+    h2.titulo{
+        font-size: 34px;
+        line-height: 30px;
+    }
+
+    .abrir-menu{
+        display: block;
+    }
+
+    /* CABEÇALHOS */
+    .menu-desktop, .contato{
+        display: none;
+    }
+
+    /* TOPO DO SITE*/
+    section.topo-do-site .flex{
+        gap: 40px;
+    }
+
+    section.topo-do-site{
+        padding: 55px 8%;
+    }
+    
+    .topo-do-site h1{
+        font-size: 30px;
+    }
+    
+    .topo-do-site .img-top-site img{
+    width: 100%;
+    }
+
+    /* ESPECIALIDADE */
+    section.especialidade{
+        padding: 40px 8%;
+    }
+
+    /* SOBRE */
+    section.sobre{
+        padding: 80px 8%;
+    }
+
+    .sobre .txt-sobre h2{
+        font-size: 34px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .btn-social{
+        text-align: center;
+    }
+
+    .img-sobre img{
+        width: 100%;
+    }
+
+    /* PROJETOS */
+    section.projetos{
+        padding: 80px 8%;
+
+    }
+    .img-port{
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    section.projetos .flex{
+        gap: 60px;
+    }
+
+    /* CONTATO */
+    section.formulario{
+        padding: 80px 8%;
+    }
+
+    /* FOOTER */
+    footer .flex{
+        flex-direction: column;
+    }
+
+    footer .line-footer{
+        text-align: center;
+    }
+}
